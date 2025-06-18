@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USUARIOS</title>
+    <link rel="stylesheet" href="style Lista de Usuarios.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,-25" />
+</head>
+
+<body>
+    <aside>
+    <img id="company-logo" src="./assets/Archs-logo.svg" alt="ES.BPM">
+        <div class="barraLateral-generica">
+            <div class="barraLateral-IAC">
+            </div>
+            <p><small>INTRANET</small></p>
+            <ul class="barraLateral-Intranet">
+                <li>
+                    <span class="material-symbols-outlined">
+                        query_stats
+                        </span>
+                        Estadisticas</li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        dataset
+                        </span>
+                        Base de Datos</li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        person
+                        </span>
+                        Usuarios</li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        notifications_active
+                        </span>
+                        Notificaciones</li>
+            </ul>
+        </div>
+
+        <div class="barraLateral-projectos">
+            <p><small>OBRAS ACTIVAS</small></p>
+            <ul class="barraLateral-Intranet">
+                <li>
+                    <span class="material-symbols-outlined">
+                        factory
+                        </span>
+                        Industrial</li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        home
+                        </span>
+                        Edificación</li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        flyover
+                        </span>
+                        Obra Civil</li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <main>
+
+        <dialog id="new-project-modal">
+            <form>
+                <h2>Nuevo Usuario</h2>
+                <div class="input-list">
+
+                    <div class="form-Campo-contenedor">
+                        <label><span class="material-symbols-outlined">person</span>Nombre de Usuario <input type="text" placeholder="Nombre y Apellido?"></label>                        
+                        <p style="color: gray; font-size: var(--font-sm); margin-top: 5px; font-style: italic;"></p>
+                    </div>
+                    
+                    <div class="form-Campo-contenedor">
+                        <label><span class="material-symbols-outlined">identity_platform</span>Responsabilidad del Perfil
+                        <select>
+                            <option>Director</option>
+                            <option>Bim Manager</option>
+                            <option>Coordinador</option>
+                            <option>Modelador</option>
+                            <option>Instalaciones</option>
+                            <option>Cliente</option>
+                            <option>Jefe de Obra</option>
+                            <option>Jefe de Producción</option>
+                        </select></label>
+                    </div>
+
+                    <div class="form-Campo-contenedor">
+                        <label><span class="material-symbols-outlined">alternate_email</span>Correo   Electronico<input type="text" placeholder="Direccón de correo?"></label> 
+                    </div>
+
+                    <div class="form-Campo-contenedor">
+                        <label><span class="material-symbols-outlined">call</span>Telefono de Contacto<input type="text" placeholder="Numero de contacto?"></label>
+                    </div>
+
+                    <div class="form-Campo-contenedor">
+                        <label><span class="material-symbols-outlined">calendar_month</span>Obra de Imputación<select>
+                                <option>Todas</option>
+                                <option>El Castellet 2</option>
+                                <option>Visoren Valencia</option>
+                                <option>Plameca</option>
+                                <option>Casa Silva</option>
+                                <option>Nave Igus</option>
+                                <option>Habitatges Torreblanca</option>
+                                <option>Nave Vallejos</option>
+                            </select></span>
+                        </label>
+                    </div>
+
+                    <div style="display: flex; margin: 10px 0px 10px auto; column-gap: 10px;">
+                        <button style="background-color: rgb(252, 252, 252);">Cancel</button>
+                        <button style="background-color: rgb(252, 252, 252);">Accept</button>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+
+
+        <div id="encabezado-usuarios">
+            <div class="titulo-encabezado">
+                <h2><span class="material-symbols-outlined">people</span>Usuarios</h2>                
+            </div>
+            <div id="usuario-activo">
+                <h3>Eduardo Silva Rojas</h3>
+                <img id="foto-usuario" src="./assets/ESR3.png" alt="ES.BPM">
+                
+            </div>
+        </div>
+
+        <div id="buscador-usuario">
+        </div>
+
+        <div id="lista-completa-usuarios"> 
+            <ul class="tabla">
+                <li class="encabezado-tabla">
+                    <div class="encabezado-celda">Nombre de Usuario</div>
+                    <div class="encabezado-celda">Perfil</div>
+                    <div class="encabezado-celda">Correo</div>
+                    <div class="encabezado-celda">telefono</div>
+                    <div class="encabezado-celda">Obra</div>
+                </li>
+                    <li class="tabla-fila-celda">
+                        <div class="tabla-celda">
+                            <p>Manel Carques</p>
+                        </div>
+                        <div class="tabla-celda">Director</div>
+                        <div class="tabla-celda">m.carques@iac.es</div>
+                        <div class="tabla-celda">1234567890</div>
+                        <div class="tabla-celda">Todas</div>
+                    </li>
+                    <li class="tabla-fila-celda">
+                        <div class="tabla-celda">
+                            <p>Tomas Navas</p>
+                        </div>
+                        <div class="tabla-celda">Modelador</div>
+                        <div class="tabla-celda">t.navas@iac.es</div>
+                        <div class="tabla-celda">1234567890</div>
+                        <div class="tabla-celda">El Castellet 2</div>
+                    </li>
+                    <li class="tabla-fila-celda">
+                        <div class="tabla-celda">
+                            <p>Naiara Herrera</p>
+                        </div>
+                        <div class="tabla-celda">Modelador</div>
+                        <div class="tabla-celda">n.herrera@iac.es</div>
+                        <div class="tabla-celda">1234567890</div>
+                        <div class="tabla-celda">Visoren Valencia</div>
+                    </li>
+                    <li class="tabla-fila-celda">
+                        <div class="tabla-celda">
+                            <p>Jose Luis Illera</p>
+                        </div>
+                        <div class="tabla-celda">Instalaciones</div>
+                        <div class="tabla-celda">jl.illera@iac.es</div>
+                        <div class="tabla-celda">1234567890</div>
+                        <div class="tabla-celda">El Castellet 2</div>
+                    <li class="tabla-fila-celda">
+                        <div class="tabla-celda">
+                            <p>Simon Porras</p>
+                        </div>
+                        <div class="tabla-celda">Instalaciones</div>
+                        <div class="tabla-celda">s.porras@iac.es</div>
+                        <div class="tabla-celda">1234567890</div>
+                        <div class="tabla-celda">Plameca</div>
+                    </li>
+                    <li class="tabla-fila-celda">
+                        <div class="tabla-celda">
+                            <p>Milka Patrilka</p>
+                        </div>
+                        <div class="tabla-celda">Cliente</div>
+                        <div class="tabla-celda">m.patrilka@cliente.com</div>
+                        <div class="tabla-celda">1234567890</div>
+                        <div class="tabla-celda">Casa Silva</div>
+                    </li>
+            </ul>
+        </div>
+            
+        <div class="pagina">
+            <!-- 1 2 3 3 4 5 6 7 8 9 10 -->
+            <ul class="pagina-list">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">8</a></li>
+        </div>
+    </main>
+</body>
+
+</html>
